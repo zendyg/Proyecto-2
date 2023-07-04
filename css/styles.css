@@ -1,0 +1,391 @@
+/* En este archivo escriban su CSS */
+
+/* Fonts */
+/* Importar aquí la font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+*  cuyos valores asigna por defecto el navegador.
+*/
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    background-color: #fbfbfb;
+    color: #0f0f0f;
+    
+}
+h1{
+    font-size: 36;
+    text-align: center;
+    color:#123e60;
+}
+h2{
+    font-size: 28;
+    text-align: center; 
+    color: #2bcac8;
+}
+/* Para quitar los puntos a los items de listas */
+ul {
+    list-style: none;
+    flex-flow: row nowrap;
+}
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*Header*/
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 3px 10px -5px;
+    background-color:white;
+}
+.logo{
+    width: 70%; 
+}
+ul.menu{
+    display: flex;
+    font-size: 20px;
+    
+}
+.button{
+    background-color:#123e60;
+    color: white;
+   
+}
+li.menu-item a{
+    padding: 16px;}
+
+
+/*tamaño y Forma de las Secciones */
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    min-height: 50px;
+    padding-top: 120px;
+
+}
+
+/*seccion Inicio */
+
+section#inicio{
+    justify-content: space-around;
+    text-align: center;
+}
+figure.presentacion-img{
+    margin-bottom: 20px;
+
+}
+figure.presentacion-img img{
+    border-radius: 50%;
+    width: 300px;
+}
+
+article.presentacion{
+    width: 100%;
+    text-align:justify;
+}
+a.btn{
+    background-color:#123e60;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 5%;
+    text-align: center;
+   
+}
+
+.fa-regular{
+    
+     font-size: 20px;
+    color:#123e60;
+
+}
+
+section#habilidades{
+    justify-content:space-aroundce;
+    text-align: center;
+    display: flex;
+    padding-top: 10%;
+   
+   
+}
+div.colorfondo{
+    background-color: #123e60 ;
+    border-radius: 10px 10px 10px;
+    padding: 5%;
+    color: white;
+    text-align: justify;
+   
+}
+
+/*Mis Proyectos */
+
+#proyectos {
+    margin-top: -30px;
+}
+
+
+
+.contenedor-de-proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tarjeta-de-proyectos {
+    flex: 1 0 300px;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.project-pic {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 130px;
+    margin-bottom: 20px;
+
+}
+
+.titulo-de-proyectos {
+    font-size: 50px;
+    margin-bottom: 100px;
+    color: #123e60;
+
+}
+
+.detalle-de-proyectos {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.enlace-de-proyecto {
+    display: inline-block;
+    margin-top: 10px;
+    color: #123e60;
+
+}
+
+.titulo-de-proyectos-cr{
+    margin-bottom: 20px;
+
+}    
+
+/* seccion contacto*/
+
+section#contacto{
+    justify-content:space-aroundce;
+    text-align: center;
+    display: flex;
+    padding-top: 10%;
+   
+   
+}
+
+div .icono{
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 20%;  
+    padding: 20%;
+   
+
+ }
+        
+div.icono img{
+
+   width: 10%;
+   margin-top: 10%;
+   margin-left: 30px;
+   justify-self: start;
+   transition: 0.5s;
+   
+   
+ }    
+.img img:hover {
+    transform: translateX(50px)
+}
+
+
+/*Footer*/
+
+#mainfooter{
+    text-align: center;
+    padding: 40px;
+    background-color: #123e60;
+    align-self: flex-end;
+    font-weight: 900;
+    font-weight: bold;
+    color: #fbfbfb;
+    margin-top: 30%;
+    height: 90px;
+    width: 100%;
+}
+
+ /* Responsive*/
+
+ @media (max-width: 768px) {
+    .header.button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 10px;
+    cursor: pointer;
+        
+    }
+    .nav{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 30vh;
+        height: 100vh;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color:#123e60;
+        padding: 10px;
+        transition: all 0.3s ease-in;
+        color: white;
+    }
+    .nav.activo{
+        display: block;
+        transform: translateX(0);
+    }
+    ul.menu{
+     flex-direction: column;
+    }
+    li.menu-item{
+        margin: 10px 0;
+    }
+
+ }
+ h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+section#inicio {
+    flex-direction: column;
+    margin-bottom: 20px;
+    /* Espacio inferior entre la sección inicio y la sección hablemos */
+}
+
+.presentacion-img {
+    margin-bottom: -10px;
+}
+
+.presentacion h1 {
+    margin-top: 10px;
+    text-align: left;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#habilidades {
+    margin-bottom: -50px;
+}
+
+.proyectos{
+    margin-bottom: -100px;
+}
+
+div.icono img {
+    margin: 32px;
+}
+
+.icono img{
+    width: 50px;
+}
+
+section#contacto{
+    margin-bottom: -100px;
+}
+
+.tarjeta-de-proyectos {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+@media( min-width : 1024px){
+    h1 {
+    font-size: 48px;
+    text-align: left;
+
+}
+.nav {
+    display: flex;
+}
+.button{
+    display: none;
+}
+h2{
+    font-size: 32px;
+}
+section#inicio{
+   flex-direction:row;
+}
+article.presentacion{
+    width: 50%;
+    text-align: justify;
+}
+div.icono img{
+    margin: 32px;
+
+}
+
+}
+li.menu-item:hover,
+li.menu-item a.active,
+a.btn:hover
+{
+background: #2bcac8;
+transition: background-color 0.3s;
+color: white;
+}
+

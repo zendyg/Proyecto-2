@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZENDY GOTERA V.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="https://www.instagram.com/zendypaulina/">
+            <img class="logo" src="img/LOGO.png" alt="logo Zendy"></a>
+
+        <button class="button">
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </button>
+
+        <nav class="nav">
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="#inicio" class="active">Inicio</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#habilidades">Habilidades</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#proyectos">Proyectos</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- La estructura básica y la vinculación con CSS estan listas. A codear! 💪  -->
+    <!-- En este archivo escriban su HTML -->
+    <main>
+        <section id="inicio">
+            <figure class="presentacion-img">
+                <img src="img/foto zendy.jpg" onmouseover="this.src='img/LOGO.png';"
+                    onmouseout="this.src='img/foto zendy.jpg';" />
+            </figure>
+            <article class="presentacion">
+                <h1>Hola Soy Zendy</h1>
+                <p>Soy Ingeniera de Sistemas con amplia experiencia en roles administrativos y de asistencia, en
+                    organizaciones reconocidas. Actualmente, me encuentro incursionando en el apasionante mundo de la
+                    programación Frontend y estoy comprometida con el desarrollo de mis habilidades en esta área. Busco
+                    combinar mis habilidades administrativas con mi conocimiento en tecnologías web para brindar
+                    soluciones creativas y eficientes.</p>
+                <a href="img/cv zendy.pdf" class="btn"><i class="fa-regular fa-circle-down"></i>Descargar CV</a>
+
+            </article>
+        </section>
+
+
+        <section id="habilidades">
+            <div class="colorfondo">
+                <p>La ingeniería de sistemas no trata solo del conocimiento de las diversas áreas de la ingeniería, sino
+                    de hacer que los sistemas funcionen teniendo en cuenta todos los factores involucrados. Estos
+                    incluyen especificaciones y objetivos, el desarrollo de sistemas con el paso del tiempo, los
+                    procesos y métodos implicados, así como las consideraciones económicas, de seguridad, calidad y
+                    medioambientales.</p>
+                <br>
+                <h2>¡Habilidades!</h2>
+                <br>
+                <li>Desarrollo Frontend: Conocimientos en HTML5, CSS3 y JavaScript, con capacidad para crear estructuras
+                    semánticas, estilizar páginas web, implementar interactividad y aplicar conceptos de diseño
+                    responsivo</li>
+                <br>
+                <li>Gestión administrativa</li>
+                <br>
+                <li>Trabajo en Equipo</li>
+                <br>
+                <li>Resolución de problemas</li>
+                <br>
+                <li>Atención al Cliente</li>
+                <br>
+            </div>
+        </section>
+        <section class="proyectos" id="proyectos">
+            <h3 class="titulo-de-proyectos">Mis Proyectos</h3>
+            <div class="contenedor-de-proyectos">
+                <div class="tarjeta-de-proyectos">
+                    <img src="img/calculadora.png" alt="Calculadora" loading="lazy" class="project-pic" />
+                    <h3 class="titulo-de-proyectos-cr">Calculadora JavaScript</h3>
+                    <p class="detalle-de-proyectos">Este Proyecto proporciona la estructura básica de la calculadora y
+                        estilos css para mejorar la visibilidad En el código JavaScript, se definen varias funciones que
+                        se utilizan para realizar las operaciones de la calculadora.Estas funciones se vinculan a los
+                        botones mediante el atributo onclick
+                    </p>
+                    <a href=" https://zendyg.github.io/calculadora/" target="_blank"
+                        class="enlace-de-proyecto"><strong>Ver Mas </strong></a>
+                </div>
+                <div class="tarjeta-de-proyectos">
+                    <img src="./img/reserva .png" alt="Reserva de Citas" loading="lazy" class="project-pic" />
+                    <h3 class="titulo-de-proyectos-cr">Reserva de Citas</h3>
+                    <p class="detalle-de-proyectos">
+                        Es una pagina de "Reservas de Citas" que permite a los usuarios programar y reservar citas para
+                        recibir servicios médicos u otras actividades programadas. Proporcionar a los usuarios una forma
+                        conveniente de solicitar una cita y enviar la información necesaria al proveedor de servicios.
+                    </p>
+                    <a href= "https://zendyg.github.io/reserva-de-citas/" target="_blank"
+                        class="enlace-de-proyecto"><strong>Ver Mas </strong></a>
+                </div>
+                <div class="tarjeta-de-proyectos">
+                    <img src="./img/adivinanzas1.png" alt="Juego de Adivinanzas" loading="lazy" class="project-pic" />
+                    <h3 class="titulo-de-proyectos-cr">Juego de Adivinanzas</h3>
+                    <p class="detalle-de-proyectos">
+                        En este juego de Adivinanzas utilizando el método Math.random().El jugador ingresa la respuesta
+                        y si la respuesta no es correcta mostrará (Respuesta incorrecta Inténtalo de nuevo) y dará una
+                        pista. Si la respuesta es correcta se muestra un mensaje de felicitaciones y se termina el
+                        juego.
+                    </p>
+                    <a href="https://zendyg.github.io/adivinanza/" target="_blank" class="enlace-de-proyecto"><strong>Ver Mas </strong></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div class="icono">
+
+                <a class="img"
+                    href="mailto:zebdygotera@gmail.com?Subject=Consultoría%20de%20Trabajo%20del%20Informático"><img
+                        src="img/mail.png"></a>
+                <a class="img" href="https://github.com/"><img src="img/github.png"></a>
+                <a class="img" href="https://www.linkedin.com/"><img src="img/linkedin.png"></a>
+            </div>
+        </section>
+
+        <footer id="mainfooter">
+            <div>
+                <p>© ZendyGotera 2023.</p>
+            </div>
+
+        </footer>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
